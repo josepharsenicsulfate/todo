@@ -32,8 +32,9 @@ addItem.addEventListener('click', ()=>{
     
 })
 
+// index plz
 delItem.addEventListener('click', ()=>{
-    
+
 })
 
 
