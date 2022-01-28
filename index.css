@@ -1,0 +1,130 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: sans-serif;
+    font-size: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+button{
+    border-radius: 5px;
+    border-color: white;
+    height: 2rem;
+    width: 2rem;
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+button:hover{
+    opacity: 1;
+}
+
+.del{
+    background-color: rgb(238, 85, 85);
+     border-radius: 5px;
+    border-color: white;
+    height: 2rem;
+    width: 2rem;
+    opacity: 0.6;
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor:pointer;
+}
+
+.cross{
+    background-color: rgb(60, 190, 60);
+    border-radius: 5px;
+    border-color: white;
+    height: 2rem;
+    width: 2rem;
+    opacity: 0.6;
+    transition: 0.3s;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  
+
+}
+
+.add{
+    background-color: rgb(52, 65, 245);
+    cursor: pointer;
+    border-radius:50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-color: white;
+    height: 2rem;
+    width: 2rem;
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+.add:hover{
+     opacity: 1;
+}
+
+.add-item-container{
+    display:flex;
+    gap:10px;
+    
+}
+
+.list-container{
+    display:flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+    max-width:300px
+   
+}
+.btn-container{
+    display: flex;
+ 
+}
+.list-item{
+     display:flex;
+    justify-content: space-between;
+ 
+    width: 100%;
+    max-width:300px
+}
+
+input{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: black solid 1px;
+    opacity: 0.6;
+    font-size: 20px;
+}
+
+input:focus{
+    outline: none;
+    opacity: 1;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+}
+
+.toggle-done{
+    text-decoration: line-through;
+    animation: strike 0.5s linear;
+}
+
+@keyframes strike{
+    from{text-decoration-color: transparent;}
+    to{text-decoration-color: auto;}
+}
