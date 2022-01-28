@@ -1,6 +1,7 @@
 // javascript
 
 const addItem = document.getElementById('addBtn')
+<<<<<<< HEAD
 const list = document.getElementsByClassName('list-container')[0]
 
 let listOfItems = ""
@@ -39,12 +40,33 @@ function updateItemtoDom(){
 
     del()
     cross()
+=======
+const delItem = document.getElementById('')
+const list = document.getElementsByClassName('list-container')[0]
+let listOfItems = ""
+function addItemtoDom(item){
+   
+      listOfItems +=`
+      <div class="list-item">
+            <div class='task-container'>${item}</div>
+            <div class="btn-container">
+                <button class="del" onClick="del()">-</button>
+                <button class="cross" onClick="cross()">✓</button>
+            </div>
+       </div>
+      `
+  
+    list.innerHTML = listOfItems
+    
+   
+>>>>>>> 4f6fd928f6ea87e5548c643625d876d5834c6784
 }
 
 
 addItem.addEventListener('click', ()=>{
     let getValue = document.getElementById('addItemText')
     if(getValue.value !== " "){
+<<<<<<< HEAD
         arrayOfItems.push(getValue.value)
         updateItemtoDom()
     }
@@ -99,3 +121,26 @@ function cross(){
         })
     })
 }
+=======
+        addItemtoDom(getValue.value)
+    }
+
+    console.log(list);
+    
+})
+
+// index plz
+delItem.addEventListener('click', ()=>{
+
+})
+
+
+function del(){
+    document.getElementById("test").remove();
+}
+
+function cross(){
+    document.getElementById("test").style.textDecoration = "line-through";
+}
+
+>>>>>>> 4f6fd928f6ea87e5548c643625d876d5834c6784
