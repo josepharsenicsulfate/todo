@@ -34,7 +34,10 @@ function updateItemtoDom(){
                     `
             }
    })  
+<<<<<<< HEAD
     console.log(arrayOfItems)
+=======
+>>>>>>> 4d5bbbf58a3bf286b3fe002dc83faa1ced059270
     console.log(doneList)
     list.innerHTML = listOfItems
 
@@ -49,7 +52,12 @@ addItem.addEventListener('click', ()=>{
         arrayOfItems.push(getValue.value)
         updateItemtoDom()
     }
+<<<<<<< HEAD
 
+=======
+    del()
+    cross()
+>>>>>>> 4d5bbbf58a3bf286b3fe002dc83faa1ced059270
 })
 
 
@@ -68,6 +76,11 @@ function del(){
             convertArray.splice(convertArray.indexOf(event.target),1)
             doneList.splice(convertArray.indexOf(event.target),1)
             updateItemtoDom()
+<<<<<<< HEAD
+=======
+            
+            del()
+>>>>>>> 4d5bbbf58a3bf286b3fe002dc83faa1ced059270
         })  
     });
        
@@ -90,7 +103,17 @@ function cross(){
             }else if(!doneList.includes(convertArrCrs.indexOf(event.target))){
                 doneList.push(convertArrCrs.indexOf(event.target))
             }
+<<<<<<< HEAD
             updateItemtoDom()
         })
     })
 }
+=======
+
+            updateItemtoDom()
+            
+            cross()
+        })
+    })
+}
+>>>>>>> 4d5bbbf58a3bf286b3fe002dc83faa1ced059270
